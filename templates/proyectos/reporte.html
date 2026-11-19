@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block contenido %}
+<a href="{% url 'proyectos:detalle' r.proyecto.pk %}">&larr; Proyecto</a>
+<div class="d-flex justify-content-between align-items-center mt-2">
+  <h1 class="h4">Reporte de salud: {{ r.proyecto.nombre }}</h1>
+  <a class="btn btn-primary btn-sm" href="{% url 'proyectos:reporte_pdf' r.proyecto.pk %}">Descargar PDF</a>
+</div>
+<p class="fs-5">Puntaje del proyecto:
+  <span class="badge text-bg-{{ r.semaforo.bs }}">{{ r.texto }} · {{ r.semaforo.etiqueta }}</span></p>
+
+{% for s in r.sprints %}
+<div class="card mb-3">
+  <div class="card-header d-flex justify-content-between">
+    <strong>{{ s.sprint.nombre }}</strong>
+    <span class="badge text-bg-{{ s.semaforo.bs }}">{{ s.texto }} · {{ s.semaforo.etiqueta }}</span>
+  </div>
+  <div class="card-body">
+    {% for d in s.dimensiones %}
+    <h2 class="h6 mt-2">{{ d.nombre }}
+      <span class="badge text-bg-{{ d.semaforo.bs }}">{{ d.texto }} · {{ d.semaforo.etiqueta }}</span></h2>
+    <table class="table table-sm">
+      {% for m in d.metricas %}
+      <tr><td>{{ m.nombre }}</td><td>{{ m.valor }}</td><td>meta {{ m.umbral }}</td><td>puntaje {{ m.texto }}</td></tr>
+      {% endfor %}
+    </table>
+    {% endfor %}
+  </div>
+</div>
+{% empty %}<p class="text-muted">El proyecto no tiene sprints.</p>{% endfor %}
+{% endblock %}

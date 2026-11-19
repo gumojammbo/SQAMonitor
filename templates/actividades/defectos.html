@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block contenido %}
+<a href="{% url 'proyectos:detalle' pk %}">&larr; Proyecto</a>
+<h1 class="h4 mt-2">Defectos: {{ actividad.nombre }}</h1>
+<table class="table bg-white">
+  <tr><th>Descripción</th><th>Severidad</th><th>Estado</th><th>Registró</th><th>Fecha</th><th></th></tr>
+  {% for d in actividad.defectos.all %}
+  <tr>
+    <td>{{ d.descripcion }}</td><td>{{ d.get_severidad_display }}</td><td>{{ d.get_estado_display }}</td>
+    <td>{{ d.registrado_por }}</td><td>{{ d.fecha|date:"d/m/Y" }}</td>
+    <td class="d-flex gap-2">
+      <a href="{% url 'actividades:editar_defecto' pk actividad.pk d.pk %}">Editar</a>
+      <form method="post" action="{% url 'actividades:estado_defecto' pk actividad.pk d.pk %}">{% csrf_token %}
+        <button class="btn btn-outline-secondary btn-sm">{% if d.estado == "abierto" %}Marcar corregido{% else %}Reabrir{% endif %}</button>
+      </form>
+    </td>
+  </tr>
+  {% empty %}<tr><td colspan="6" class="text-muted">Sin defectos.</td></tr>{% endfor %}
+</table>
+<form method="post" class="col-md-6">{% csrf_token %}{{ form.as_div }}
+  <button class="btn btn-primary btn-sm">Registrar defecto</button>
+</form>
+{% endblock %}

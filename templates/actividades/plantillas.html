@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block contenido %}
+<a href="{% url 'proyectos:detalle' proyecto.pk %}">&larr; Proyecto</a>
+<h1 class="h4 mt-2">Plantillas de checklist</h1>
+<div class="list-group mb-3">
+  {% for p in plantillas %}
+  <a class="list-group-item" href="{% url 'plantillas:detalle' proyecto.pk p.pk %}">{{ p.nombre }} ({{ p.criterios.count }} criterios)</a>
+  {% empty %}<p class="text-muted">Aún no hay plantillas.</p>{% endfor %}
+</div>
+<form method="post" class="col-md-6">{% csrf_token %}{{ form.as_div }}
+  <button class="btn btn-primary btn-sm">Crear plantilla</button>
+</form>
+{% endblock %}

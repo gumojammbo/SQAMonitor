@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="col-md-6">
+  <h1 class="h4">{{ titulo }}</h1>
+  <form method="post">{% csrf_token %}{{ form.as_div }}
+    <button class="btn btn-primary">Guardar</button>
+    {% if volver %}<a href="{{ volver }}">Cancelar</a>{% endif %}
+  </form>
+</div>
+{% endblock %}

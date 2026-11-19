@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="d-flex justify-content-between align-items-center">
+  <h1 class="h4">{{ proyecto.nombre }}</h1>
+  <span>
+    <a class="btn btn-outline-secondary btn-sm" href="{% url 'plantillas:lista' proyecto.pk %}">Plantillas de checklist</a>
+    <a class="btn btn-outline-primary btn-sm" href="{% url 'proyectos:reporte' proyecto.pk %}">Reporte de salud</a>
+  </span>
+</div>
+
+<h2 class="h5 mt-4">Integrantes</h2>
+<ul class="list-group mb-2">
+  {% for u in proyecto.integrantes.all %}
+  <li class="list-group-item d-flex justify-content-between">
+    {{ u.correo }}
+    {% if u != user %}
+    <form method="post" action="{% url 'proyectos:quitar_integrante' proyecto.pk u.pk %}">{% csrf_token %}
+      <button class="btn btn-outline-danger btn-sm">Quitar</button>
+    </form>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+<details class="col-md-6">
+  <summary class="btn btn-primary btn-sm" title="Agregar integrante">+</summary>
+  <form method="post" action="{% url 'proyectos:agregar_integrante' proyecto.pk %}" class="mt-2">
+    {% csrf_token %}{{ form_integrante.as_div }}
+    <button class="btn btn-primary btn-sm">Agregar</button>
+  </form>
+</details>
+
+<h2 class="h5 mt-4">Sprints</h2>
+<table class="table bg-white">
+  <tr><th>Nombre</th><th>Inicio</th><th>Fin</th><th>Cobertura</th><th>Pruebas aprobadas</th>
+      <th>Errores flake8</th><th></th></tr>
+  {% for s in proyecto.sprints.all %}
+  <tr>
+    <td>{{ s.nombre }}</td><td>{{ s.inicio|date:"d/m/Y" }}</td><td>{{ s.fin|date:"d/m/Y" }}</td>
+    {% with m=s.metrica %}
+    <td>{% if m %}{{ m.cobertura }}%{% endif %}</td>
+    <td>{% if m %}{{ m.aprobadas }}/{{ m.ejecutadas }}{% endif %}</td>
+    <td>{% if m %}{{ m.flake8 }}{% endif %}</td>
+    {% endwith %}
+    <td><a href="{% url 'proyectos:metricas' proyecto.pk s.pk %}">Métricas</a></td>
+  </tr>
+  {% empty %}<tr><td colspan="7" class="text-muted">Sin sprints.</td></tr>{% endfor %}
+</table>
+<form method="post" action="{% url 'proyectos:nuevo_sprint' proyecto.pk %}" class="col-md-6">
+  {% csrf_token %}{{ form_sprint.as_div }}
+  <button class="btn btn-primary btn-sm">Crear sprint</button>
+</form>
+
+<div class="d-flex justify-content-between align-items-center mt-4">
+  <h2 class="h5 mb-0">Actividades</h2>
+  <a class="btn btn-primary btn-sm" href="{% url 'actividades:nueva' proyecto.pk %}">Nueva actividad</a>
+</div>
+<table class="table bg-white mt-2">
+  <tr><th>Actividad</th><th>Sprint</th><th>Dimensión</th><th>Fecha</th><th>Responsable</th>
+      <th>Revisor</th><th>Revisión</th><th>Hecha</th><th></th></tr>
+  {% for s in proyecto.sprints.all %}{% for a in s.actividades.all %}
+  <tr>
+    <td>{{ a.nombre }}</td><td>{{ s.nombre }}</td><td>{{ a.get_dimension_display }}</td>
+    <td>{{ a.fecha|date:"d/m/Y" }}</td><td>{{ a.responsable }}</td><td>{{ a.revisor|default:"" }}</td>
+    <td>{{ a.get_estado_revision_display }}
+      {% if a.revisor %}<a href="{% url 'actividades:checklist' proyecto.pk a.pk %}">Checklist</a>{% endif %}</td><td>{{ a.hecha|yesno:"Sí,No" }}</td>
+    <td>
+      <a href="{% url 'actividades:defectos' proyecto.pk a.pk %}">Defectos ({{ a.abiertos }} abiertos de {{ a.defectos.count }})</a>
+      <a href="{% url 'actividades:editar' proyecto.pk a.pk %}">Editar</a>
+      <form method="post" action="{% url 'actividades:eliminar' proyecto.pk a.pk %}" class="d-inline"
+            onsubmit="return confirm('¿Eliminar la actividad? Se borrarán también su checklist y sus {{ a.defectos.count }} defecto(s).')">
+        {% csrf_token %}<button class="btn btn-link btn-sm p-0 text-danger">Eliminar</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}{% endfor %}
+</table>
+{% endblock %}

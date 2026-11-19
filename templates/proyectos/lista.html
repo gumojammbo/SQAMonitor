@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="d-flex justify-content-between mb-3">
+  <h1 class="h4">Proyectos</h1>
+  <a class="btn btn-primary" href="{% url 'proyectos:nuevo' %}">Nuevo proyecto</a>
+</div>
+<div class="list-group">
+  {% for p in proyectos %}
+  <a class="list-group-item" href="{% url 'proyectos:detalle' p.pk %}">{{ p.nombre }}</a>
+  {% empty %}<p class="text-muted">Aún no tienes proyectos.</p>{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block contenido %}
+<div class="col-md-5 mx-auto">
+  <h1 class="h4">Crear cuenta</h1>
+  <form method="post">{% csrf_token %}{{ form.as_div }}
+    <button class="btn btn-primary">Registrarme</button>
+    <a href="{% url 'cuentas:login' %}">Ya tengo cuenta</a>
+  </form>
+</div>
+{% endblock %}

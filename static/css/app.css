@@ -1,0 +1,7 @@
+/* estilo de bootstrap para los campos que genera django */
+form input:not([type=checkbox]):not([type=radio]), form select, form textarea {
+  display: block; width: 100%; padding: .375rem .75rem; margin-bottom: .5rem;
+  border: 1px solid #ced4da; border-radius: .375rem;
+}
+form .helptext, form ul.errorlist { font-size: .85rem; }
+form ul.errorlist { color: #dc3545; padding-left: 1rem; }

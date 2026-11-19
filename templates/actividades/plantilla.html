@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block contenido %}
+<a href="{% url 'plantillas:lista' pk %}">&larr; Plantillas</a>
+<div class="d-flex justify-content-between align-items-center mt-2">
+  <h1 class="h4">{{ lista.nombre }}</h1>
+  <form method="post" action="{% url 'plantillas:borrar' pk lista.pk %}" onsubmit="return confirm('¿Borrar la plantilla? Los checklists ya creados no cambian.')">{% csrf_token %}
+    <button class="btn btn-outline-danger btn-sm">Borrar plantilla</button>
+  </form>
+</div>
+<ul class="list-group mb-3">
+  {% for c in lista.criterios.all %}
+  <li class="list-group-item d-flex justify-content-between">{{ c.texto }}
+    <form method="post" action="{% url 'plantillas:quitar_criterio' pk lista.pk c.pk %}">{% csrf_token %}
+      <button class="btn btn-outline-danger btn-sm">Quitar</button>
+    </form>
+  </li>
+  {% empty %}<li class="list-group-item text-muted">Sin criterios.</li>{% endfor %}
+</ul>
+<form method="post" class="col-md-6">{% csrf_token %}{{ form.as_div }}
+  <button class="btn btn-primary btn-sm">Agregar criterio</button>
+</form>
+{% endblock %}
