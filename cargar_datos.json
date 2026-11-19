@@ -1,0 +1,1222 @@
+{
+ "integrantes": [
+  "Arath Garcia Román",
+  "Fabian Martínez Alonso",
+  "Leonardo Isaias Fernández Morales",
+  "Ndahai Arenas García"
+ ],
+ "actividades": [
+  {
+   "nombre": "Definir alcance y casos de uso",
+   "dimension": "especificacion",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Ndahai Arenas García",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Definir arquitectura (MVT y contenedores Docker)",
+   "dimension": "diseno",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Arath Garcia Román",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Diagramar casos de uso",
+   "dimension": "especificacion",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Fabian Martínez Alonso",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Redactar SRS borrador inicial",
+   "dimension": "especificacion",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Ndahai Arenas García",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Redactar SRS",
+   "dimension": "especificacion",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Arath Garcia Román",
+   "revisor": "Leonardo Isaias Fernández Morales",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "SRS",
+   "criterios": [
+    [
+     "El ID y el nombre del caso de uso son únicos y coinciden con los del diagrama de casos de uso",
+     true
+    ],
+    [
+     "Los requerimientos cumplen completamente con lo planteado en los wireframes validados",
+     true
+    ],
+    [
+     "El flujo normal cumple con el ejemplo mostrado en el wireframe",
+     true
+    ],
+    [
+     "Los actores primarios y secundarios corresponden a los definidos en el diagrama de casos de uso",
+     true
+    ],
+    [
+     "La descripción es clara y permite tener un entendimiento a alto nivel del caso de uso",
+     true
+    ],
+    [
+     "Las precondiciones están definidas claramente y son alcanzables",
+     true
+    ],
+    [
+     "Se definen correctamente las postcondiciones de éxito y de fracaso y son alcanzables bajo un flujo normal o alternativo",
+     true
+    ],
+    [
+     "Las postcondiciones son congruentes con el objetivo del caso de uso",
+     true
+    ],
+    [
+     "Los pasos del flujo normal están numerados y alternan las acciones del actor con las respuestas del sistema",
+     true
+    ],
+    [
+     "Se define un flujo alternativo y/o de excepción",
+     true
+    ],
+    [
+     "Cada flujo alternativo indica el paso del flujo normal donde se origina y en qué paso continúa o termina",
+     true
+    ],
+    [
+     "Las reglas de negocio están numeradas, son verificables y se reflejan en algún flujo",
+     true
+    ],
+    [
+     "Los datos de control (autor, fechas, prioridad y requerimientos especiales) están completos",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Redactar SDD",
+   "dimension": "diseno",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Ndahai Arenas García",
+   "revisor": "Fabian Martínez Alonso",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "SDD",
+   "criterios": [
+    [
+     "El documento cumple con las especificaciones de formato",
+     true
+    ],
+    [
+     "El documento no contiene faltas de ortografía",
+     true
+    ],
+    [
+     "Se mantiene trazabilidad de los requerimientos funcionales y no funcionales",
+     true
+    ],
+    [
+     "La arquitectura esta definida y se justifica adecuadamente",
+     true
+    ],
+    [
+     "Se documentan las tecnologias elegidas y se justifica su uso adecuadamente",
+     true
+    ],
+    [
+     "Se establece trazabilidad entre el SDD y el SRS",
+     true
+    ],
+    [
+     "Los diagramas presentados son consistentes entre si",
+     true
+    ],
+    [
+     "Los diagramas de contexto, contenedores y componentes representan los mismos elementos con distinto nivel de detalle",
+     true
+    ],
+    [
+     "El diagrama ER y los diagramas de clases son consistentes entre sí (entidades, atributos y relaciones)",
+     true
+    ],
+    [
+     "Los diagramas incluyen simbología que explica el significado de flechas y elementos",
+     true
+    ],
+    [
+     "Las decisiones clave de diseño incluyen sus alternativas consideradas y su justificación",
+     true
+    ],
+    [
+     "Los atributos de calidad tienen métricas medibles y el análisis de tradeoffs justifica su prioridad",
+     true
+    ],
+    [
+     "Todos los casos de uso tienen wireframes que cubren sus flujos, y se documentan las interfaces externas, restricciones y supuestos",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Redactar modelo de calidad (ISO 25010)",
+   "dimension": "especificacion",
+   "fecha": "2026-10-21",
+   "sprint": 1,
+   "responsable": "Ndahai Arenas García",
+   "revisor": "Fabian Martínez Alonso",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Validación",
+   "criterios": [
+    [
+     "Se completaron todos los reportes de verificación de las especificaciones de casos de uso del sprint",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del diseño (SDD)",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del código (vistas, formularios y modelos de Django)",
+     true
+    ],
+    [
+     "Se realizaron las pruebas pytest correspondientes para todos los casos de uso del sprint",
+     true
+    ],
+    [
+     "Los reportes de prueba de los casos de uso cubren todos los flujos presentes en la especificación de C.U",
+     true
+    ],
+    [
+     "Todas las pruebas ejecutadas pasan (100% de pruebas aprobadas)",
+     true
+    ],
+    [
+     "La cobertura de pruebas es de al menos 80% y está capturada en las métricas del sprint",
+     true
+    ],
+    [
+     "flake8 reporta 0 errores y el valor está capturado en las métricas del sprint",
+     true
+    ],
+    [
+     "Las pantallas del sistema son coherentes con los wireframes validados",
+     true
+    ],
+    [
+     "Se realizaron todos los requerimientos comprometidos y/o negociados en el SRS",
+     true
+    ],
+    [
+     "Se cumplen las métricas de los RNF definidos en el SRS",
+     true
+    ],
+    [
+     "Todos los defectos encontrados están registrados en la bitácora y los de severidad alta o crítica están corregidos",
+     true
+    ],
+    [
+     "El cumplimiento del plan del sprint es de al menos 75% (actividades hechas / actividades del sprint)",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Diseñar diagrama ER de base de datos",
+   "dimension": "diseno",
+   "fecha": "2026-10-23",
+   "sprint": 1,
+   "responsable": "Leonardo Isaias Fernández Morales",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Diseñar wireframes de las pantallas",
+   "dimension": "diseno",
+   "fecha": "2026-10-23",
+   "sprint": 1,
+   "responsable": "Arath Garcia Román",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Configurar entorno de desarrollo",
+   "dimension": "construccion",
+   "fecha": "2026-10-26",
+   "sprint": 1,
+   "responsable": "Leonardo Isaias Fernández Morales",
+   "revisor": null,
+   "hecha": true,
+   "estado": "sin_revision",
+   "checklist": null,
+   "criterios": []
+  },
+  {
+   "nombre": "Codificar registro e inicio/cierre de sesión (CU-01, CU-02)",
+   "dimension": "construccion",
+   "fecha": "2026-11-02",
+   "sprint": 1,
+   "responsable": "Arath Garcia Román",
+   "revisor": "Fabian Martínez Alonso",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar proyectos, integrantes y sprints (CU-03, CU-04)",
+   "dimension": "construccion",
+   "fecha": "2026-11-03",
+   "sprint": 1,
+   "responsable": "Fabian Martínez Alonso",
+   "revisor": "Leonardo Isaias Fernández Morales",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar actividades por sprint (CU-05)",
+   "dimension": "construccion",
+   "fecha": "2026-11-04",
+   "sprint": 2,
+   "responsable": "Leonardo Isaias Fernández Morales",
+   "revisor": "Arath Garcia Román",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar checklist y cierre de revisión (CU-07, CU-08)",
+   "dimension": "construccion",
+   "fecha": "2026-11-05",
+   "sprint": 2,
+   "responsable": "Ndahai Arenas García",
+   "revisor": "Fabian Martínez Alonso",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar defectos por actividad (CU-09)",
+   "dimension": "construccion",
+   "fecha": "2026-11-06",
+   "sprint": 2,
+   "responsable": "Fabian Martínez Alonso",
+   "revisor": "Ndahai Arenas García",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar métricas por sprint (CU-04)",
+   "dimension": "construccion",
+   "fecha": "2026-11-09",
+   "sprint": 2,
+   "responsable": "Arath Garcia Román",
+   "revisor": "Leonardo Isaias Fernández Morales",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar puntaje de salud, semáforo y reporte PDF (CU-10)",
+   "dimension": "construccion",
+   "fecha": "2026-11-10",
+   "sprint": 2,
+   "responsable": "Ndahai Arenas García",
+   "revisor": "Arath Garcia Román",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar plantillas de checklist (CU-06)",
+   "dimension": "construccion",
+   "fecha": "2026-11-11",
+   "sprint": 2,
+   "responsable": "Leonardo Isaias Fernández Morales",
+   "revisor": "Fabian Martínez Alonso",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Codificar eliminación de actividades",
+   "dimension": "construccion",
+   "fecha": "2026-11-12",
+   "sprint": 2,
+   "responsable": "Arath Garcia Román",
+   "revisor": "Ndahai Arenas García",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Código",
+   "criterios": [
+    [
+     "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+     true
+    ],
+    [
+     "El flujo de vistas y formularios es consistente con el de la especificación",
+     true
+    ],
+    [
+     "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+     true
+    ],
+    [
+     "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+     true
+    ],
+    [
+     "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+     true
+    ],
+    [
+     "Los mensajes de error y avisos corresponden con los de la especificación",
+     true
+    ],
+    [
+     "No hay codigo inutilizado",
+     true
+    ],
+    [
+     "La salida final corresponde con la mostrada en los wireframes",
+     true
+    ],
+    [
+     "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+     true
+    ],
+    [
+     "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+     true
+    ],
+    [
+     "El código no tiene errores de flake8",
+     true
+    ],
+    [
+     "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+     true
+    ],
+    [
+     "La aplicación se levanta con Docker Compose sin pasos manuales adicionales",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Ejecutar pruebas y medir métricas (cobertura, flake8)",
+   "dimension": "conformidad",
+   "fecha": "2026-11-13",
+   "sprint": 2,
+   "responsable": "Arath Garcia Román",
+   "revisor": "Ndahai Arenas García",
+   "hecha": true,
+   "estado": "aprobada",
+   "checklist": "Validación",
+   "criterios": [
+    [
+     "Se completaron todos los reportes de verificación de las especificaciones de casos de uso del sprint",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del diseño (SDD)",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del código (vistas, formularios y modelos de Django)",
+     true
+    ],
+    [
+     "Se realizaron las pruebas pytest correspondientes para todos los casos de uso del sprint",
+     true
+    ],
+    [
+     "Los reportes de prueba de los casos de uso cubren todos los flujos presentes en la especificación de C.U",
+     true
+    ],
+    [
+     "Todas las pruebas ejecutadas pasan (100% de pruebas aprobadas)",
+     true
+    ],
+    [
+     "La cobertura de pruebas es de al menos 80% y está capturada en las métricas del sprint",
+     true
+    ],
+    [
+     "flake8 reporta 0 errores y el valor está capturado en las métricas del sprint",
+     true
+    ],
+    [
+     "Las pantallas del sistema son coherentes con los wireframes validados",
+     true
+    ],
+    [
+     "Se realizaron todos los requerimientos comprometidos y/o negociados en el SRS",
+     true
+    ],
+    [
+     "Se cumplen las métricas de los RNF definidos en el SRS",
+     true
+    ],
+    [
+     "Todos los defectos encontrados están registrados en la bitácora y los de severidad alta o crítica están corregidos",
+     true
+    ],
+    [
+     "El cumplimiento del plan del sprint es de al menos 75% (actividades hechas / actividades del sprint)",
+     true
+    ]
+   ]
+  },
+  {
+   "nombre": "Validar el sistema contra los casos de uso del SRS",
+   "dimension": "conformidad",
+   "fecha": "2026-11-14",
+   "sprint": 2,
+   "responsable": "Fabian Martínez Alonso",
+   "revisor": "Leonardo Isaias Fernández Morales",
+   "hecha": true,
+   "estado": "rechazada",
+   "checklist": "Validación",
+   "criterios": [
+    [
+     "Se completaron todos los reportes de verificación de las especificaciones de casos de uso del sprint",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del diseño (SDD)",
+     true
+    ],
+    [
+     "Se completaron todos los reportes de verificacion del código (vistas, formularios y modelos de Django)",
+     true
+    ],
+    [
+     "Se realizaron las pruebas pytest correspondientes para todos los casos de uso del sprint",
+     true
+    ],
+    [
+     "Los reportes de prueba de los casos de uso cubren todos los flujos presentes en la especificación de C.U",
+     true
+    ],
+    [
+     "Todas las pruebas ejecutadas pasan (100% de pruebas aprobadas)",
+     true
+    ],
+    [
+     "La cobertura de pruebas es de al menos 80% y está capturada en las métricas del sprint",
+     true
+    ],
+    [
+     "flake8 reporta 0 errores y el valor está capturado en las métricas del sprint",
+     true
+    ],
+    [
+     "Las pantallas del sistema son coherentes con los wireframes validados",
+     true
+    ],
+    [
+     "Se realizaron todos los requerimientos comprometidos y/o negociados en el SRS",
+     true
+    ],
+    [
+     "Se cumplen las métricas de los RNF definidos en el SRS",
+     false
+    ],
+    [
+     "Todos los defectos encontrados están registrados en la bitácora y los de severidad alta o crítica están corregidos",
+     true
+    ],
+    [
+     "El cumplimiento del plan del sprint es de al menos 75% (actividades hechas / actividades del sprint)",
+     true
+    ]
+   ]
+  }
+ ],
+ "defectos": [
+  {
+   "id": "DEF-001",
+   "descripcion": "DEF-001: Falta el caso de uso CU-07 (Preparar checklist de revisión) en la especificación de requerimientos.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-002",
+   "descripcion": "DEF-002: Flujos alternativos del CU-01 (Registrarse) incorrectos.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-003",
+   "descripcion": "DEF-003: Flujos alternativos del CU-02 (Iniciar y cerrar sesión) incorrectos.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-004",
+   "descripcion": "DEF-004: Flujos alternativos del CU-04 (Gestionar sprints y métricas) incorrectos.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-005",
+   "descripcion": "DEF-005: Ambigüedades en la especificación del CU-03 (Gestionar proyecto e integrantes).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-006",
+   "descripcion": "DEF-006: Ambigüedades en la especificación del CU-05 (Gestionar actividades).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-007",
+   "descripcion": "DEF-007: Ambigüedades en la especificación del CU-06 (Gestionar plantillas de checklist).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-008",
+   "descripcion": "DEF-008: Ambigüedades en la especificación del CU-07 (Preparar checklist de revisión).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-009",
+   "descripcion": "DEF-009: Ambigüedades en la especificación del CU-08 (Cerrar revisión de una actividad).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-010",
+   "descripcion": "DEF-010: Ambigüed en la especificación del CU-09 (Gestionar defectos).",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-011",
+   "descripcion": "DEF-011: Faltan las métricas de los requerimientos no funcionales.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-012",
+   "descripcion": "DEF-012: Faltan las métricas de los requerimientos no funcionales en el diseño.",
+   "actividad": "Redactar SDD",
+   "fecha": "2026-10-22",
+   "corregido": true
+  },
+  {
+   "id": "DEF-013",
+   "descripcion": "DEF-013: El login usa nombre de usuario en lugar de correo, como viene en la especificación",
+   "actividad": "Codificar registro e inicio/cierre de sesión (CU-01, CU-02)",
+   "fecha": "2026-11-03",
+   "corregido": true
+  },
+  {
+   "id": "DEF-014",
+   "descripcion": "DEF-014: Las clases no corresponden con el codigo planteado",
+   "actividad": "Codificar actividades por sprint (CU-05)",
+   "fecha": "2026-11-05",
+   "corregido": true
+  },
+  {
+   "id": "DEF-015",
+   "descripcion": "DEF-015: El sistema no muestra el detalle del proyecto al guardar.",
+   "actividad": "Codificar actividades por sprint (CU-05)",
+   "fecha": "2026-11-05",
+   "corregido": true
+  },
+  {
+   "id": "DEF-016",
+   "descripcion": "DEF-016: Las pantallas se ven diferente a los wireframes",
+   "actividad": "Codificar métricas por sprint (CU-04)",
+   "fecha": "2026-11-10",
+   "corregido": true
+  },
+  {
+   "id": "DEF-017",
+   "descripcion": "DEF-017: El PDF tiene texto amontonado",
+   "actividad": "Codificar puntaje de salud, semáforo y reporte PDF (CU-10)",
+   "fecha": "2026-11-11",
+   "corregido": true
+  },
+  {
+   "id": "DEF-018",
+   "descripcion": "DEF-018: El puntaje de salud no esta calculado como dice en el SRS",
+   "actividad": "Codificar puntaje de salud, semáforo y reporte PDF (CU-10)",
+   "fecha": "2026-11-11",
+   "corregido": true
+  },
+  {
+   "id": "DEF-019",
+   "descripcion": "DEF-019: Falltan pasos del flujo alternativo 6",
+   "actividad": "Codificar plantillas de checklist (CU-06)",
+   "fecha": "2026-11-12",
+   "corregido": true
+  },
+  {
+   "id": "DEF-020",
+   "descripcion": "DEF-020: Faltan las reglas de negocio para calcular el puntaje de salud en la especificación del CU-10; sin ellas las postcondiciones no están claras.",
+   "actividad": "Redactar SRS",
+   "fecha": "2026-10-21",
+   "corregido": true
+  },
+  {
+   "id": "DEF-021",
+   "descripcion": "DEF-021: Las pruebas no cubren los flujos alternativos de CU-01 y CU-02.",
+   "actividad": "Ejecutar pruebas y medir métricas (cobertura, flake8)",
+   "fecha": "2026-11-14",
+   "corregido": true
+  },
+  {
+   "id": "DEF-022",
+   "descripcion": "DEF-022: RNF-5 supera 5 defectos/KLOC y RNF-2, 3, 4 y 6 no tienen medición.",
+   "actividad": "Ejecutar pruebas y medir métricas (cobertura, flake8)",
+   "fecha": "2026-11-14",
+   "corregido": false
+  }
+ ],
+ "plantillas": {
+  "Especificación": [
+   "El ID y el nombre del caso de uso son únicos y coinciden con los del diagrama de casos de uso",
+   "Los requerimientos cumplen completamente con lo planteado en los wireframes validados",
+   "El flujo normal cumple con el ejemplo mostrado en el wireframe",
+   "Los actores primarios y secundarios corresponden a los definidos en el diagrama de casos de uso",
+   "La descripción es clara y permite tener un entendimiento a alto nivel del caso de uso",
+   "Las precondiciones están definidas claramente y son alcanzables",
+   "Se definen correctamente las postcondiciones de éxito y de fracaso y son alcanzables bajo un flujo normal o alternativo",
+   "Las postcondiciones son congruentes con el objetivo del caso de uso",
+   "Los pasos del flujo normal están numerados y alternan las acciones del actor con las respuestas del sistema",
+   "Se define un flujo alternativo y/o de excepción",
+   "Cada flujo alternativo indica el paso del flujo normal donde se origina y en qué paso continúa o termina",
+   "Las reglas de negocio están numeradas, son verificables y se reflejan en algún flujo",
+   "Los datos de control (autor, fechas, prioridad y requerimientos especiales) están completos"
+  ],
+  "Codificación": [
+   "Es posible identificar el código de cada caso de uso (URL, vista, formulario, modelo y plantilla)",
+   "El flujo de vistas y formularios es consistente con el de la especificación",
+   "El código contiene comentarios de una línea que permiten entender el propósito de cada función",
+   "Se cumplen los flujos normales, alternativos y de excepción que se encuentran en la especificacion",
+   "Las reglas de negocio de la especificación se validan en los modelos o formularios",
+   "Los mensajes de error y avisos corresponden con los de la especificación",
+   "No hay codigo inutilizado",
+   "La salida final corresponde con la mostrada en los wireframes",
+   "Las vistas exigen sesión iniciada y solo los integrantes del proyecto acceden a sus datos",
+   "Cada caso de uso cuenta con pruebas pytest que cubren sus flujos y todas pasan",
+   "El código no tiene errores de flake8",
+   "El código sigue las convenciones del proyecto (nombres en español, estructura de apps y lo más simple posible)",
+   "La aplicación se levanta con Docker Compose sin pasos manuales adicionales"
+  ],
+  "SDD": [
+   "El documento cumple con las especificaciones de formato",
+   "El documento no contiene faltas de ortografía",
+   "Se mantiene trazabilidad de los requerimientos funcionales y no funcionales",
+   "La arquitectura esta definida y se justifica adecuadamente",
+   "Se documentan las tecnologias elegidas y se justifica su uso adecuadamente",
+   "Se establece trazabilidad entre el SDD y el SRS",
+   "Los diagramas presentados son consistentes entre si",
+   "Los diagramas de contexto, contenedores y componentes representan los mismos elementos con distinto nivel de detalle",
+   "El diagrama ER y los diagramas de clases son consistentes entre sí (entidades, atributos y relaciones)",
+   "Los diagramas incluyen simbología que explica el significado de flechas y elementos",
+   "Las decisiones clave de diseño incluyen sus alternativas consideradas y su justificación",
+   "Los atributos de calidad tienen métricas medibles y el análisis de tradeoffs justifica su prioridad",
+   "Todos los casos de uso tienen wireframes que cubren sus flujos, y se documentan las interfaces externas, restricciones y supuestos"
+  ],
+  "Verificación": [
+   "Se completaron todos los reportes de verificación de las especificaciones de casos de uso del sprint",
+   "Se completaron todos los reportes de verificacion del diseño (SDD)",
+   "Se completaron todos los reportes de verificacion del código (vistas, formularios y modelos de Django)",
+   "Se realizaron las pruebas pytest correspondientes para todos los casos de uso del sprint",
+   "Los reportes de prueba de los casos de uso cubren todos los flujos presentes en la especificación de C.U",
+   "Todas las pruebas ejecutadas pasan (100% de pruebas aprobadas)",
+   "La cobertura de pruebas es de al menos 80% y está capturada en las métricas del sprint",
+   "flake8 reporta 0 errores y el valor está capturado en las métricas del sprint",
+   "Las pantallas del sistema son coherentes con los wireframes validados",
+   "Se realizaron todos los requerimientos comprometidos y/o negociados en el SRS",
+   "Se cumplen las métricas de los RNF definidos en el SRS",
+   "Todos los defectos encontrados están registrados en la bitácora y los de severidad alta o crítica están corregidos",
+   "El cumplimiento del plan del sprint es de al menos 75% (actividades hechas / actividades del sprint)"
+  ]
+ }
+}
